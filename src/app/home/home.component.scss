@@ -1,0 +1,162 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+header .nav-con {
+    display: flex;
+    padding: 15px;
+    line-height: 35px;
+    background-color: rgb(252, 252, 252);
+    height: 3rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+}
+
+header .nav-con .register a {
+    margin-right: 1.1rem;
+}
+
+
+header .nav-con .register .signUp {
+    margin-right: 1.1rem;
+    padding: 10px;
+    border: 1px solid rgb(7, 242, 175);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(7, 242, 175);
+
+
+}
+
+
+header .nav-con .logo {
+    padding-right: 4rem;
+    margin-left: 6rem;
+    color: rgb(7, 242, 175);
+    font-size: 18px;
+}
+
+header .nav-con .main-nav a .logo {
+    color: rgb(7, 242, 175);
+    font-size: 20px;
+}
+
+header .nav-con .main-nav {
+    margin-right: 38rem;
+}
+
+header .nav-con .main-nav a span {
+    margin-right: 1.1rem;
+    color: black;
+}
+
+section .hero {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.image img{
+    display: block;
+    width: 700px;
+
+}
+
+.hero .text {
+    width: 30rem;
+
+
+}
+
+.hero .text h2 {
+    font-size: 40px;
+
+}
+
+.hero .text p {
+    width: 30rem;
+    margin-top: 2rem;
+    margin-bottom: 6rem;
+
+}
+
+
+.hero .text a {
+    border: 1px solid rgb(7, 242, 175);
+    color: rgb(7, 242, 175);
+    padding: 10px;
+    margin-right: 1.1rem;
+    border-radius: .4rem;
+    font-size: 18px;
+}
+
+.hero .text .view {
+    background-color: rgb(7, 242, 175);
+    color: white;
+    padding: 10px;
+}
+
+footer{
+    margin-top: 2rem;
+    
+  
+
+}
+
+.top{
+    display: flex;
+    justify-content: center;
+    background-color:  rgb(7, 242, 175);
+    padding: 30px;
+
+}
+
+.message{
+    text-align: center;
+}
+
+.message h1{
+    color: white;
+    font-size: 30px;
+
+
+}
+.message p{
+    color: white;
+    font-size: 12px;
+}
+
+.message input{
+    width: 18rem;
+    padding: 15px;
+    border: none;
+    outline: none;
+}
+
+.message button{
+    padding: 15px;
+    background-color: rgb(255, 5, 209);
+    color: white;
+    border: none;
+}
+
+.social{
+    padding: 30px;
+    background-color:  rgb(0, 117, 82);
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+.social a{
+    text-decoration: none;
+    padding: 8px;
+    margin-right: 2rem;
+    font-size: 14px;
+    background-color: white;
+    border-radius: 50%;
+    color: rgb(30, 30, 247);
+
+}   

@@ -1,0 +1,43 @@
+.student-add{
+    background-color: #fff;
+    border: 1px solid #ccc;
+    margin: 6rem auto;
+    border-radius: .3rem;
+    width: fit-content;
+    padding: 20px;
+
+h2{
+    color:  rgb(0, 117, 82);
+    text-align: center;
+
+}
+
+    input{
+        display: block;
+        margin-bottom: .6rem;
+        padding: 15px;
+        width: 20rem;
+        border: none;
+        border: 1px solid rgb(194, 194, 194);
+        border-radius: .2rem;
+    }
+
+
+    label{
+        display: block;
+    }
+
+    button{
+
+        margin-top: .6rem;
+        background-color: rgb(0, 117, 82);
+        color : white;
+        border: none;
+        padding: 5px;
+        width:  22rem;
+        margin-right: .8rem;
+        border-radius: .2rem;
+        padding: 15px;
+
+    }
+}

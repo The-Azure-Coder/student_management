@@ -1,0 +1,18 @@
+<div class="student-add">
+  <h2>Student Add</h2>
+  <form action="" [formGroup]="createStudent">
+    <label for="">Enter Name</label>
+    <input type="text" formControlName="name" name="name">
+
+    <label for="">Enter Email</label>
+    <input type="email" formControlName="email" name="email">
+
+    <label for="">Enter Cohort</label>
+    <input type="number" formControlName="cohort" name="cohort">
+
+    <label for="">Enter phone Number</label>
+    <input type="number" formControlName="phoneNumber" name="phoneNumber">
+  </form>
+
+  <button (click)="newStudent()">Add Student</button>
+</div>

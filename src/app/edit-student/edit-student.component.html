@@ -1,0 +1,16 @@
+<div *ngIf="student" class="student-add">
+  <h2>Update Student</h2>
+  <label for="">Enter Name</label>
+  <input type="text" [(ngModel)]="student.name">
+
+  <label for="">Enter Email</label>
+  <input type="email" [(ngModel)]="student.email">
+
+  <label for="">Enter Cohort</label>
+  <input type="number" [(ngModel)]="student.cohort">
+
+  <label for="">Enter phone Number</label>
+  <input type="number" [(ngModel)]="student.phoneNumber">
+
+  <button (click)="update()">Update Student</button>
+</div>
