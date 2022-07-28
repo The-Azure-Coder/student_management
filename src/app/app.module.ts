@@ -13,6 +13,9 @@ import { AddStudentComponent } from './add-student/add-student.component';
 import { EditStudentComponent } from './edit-student/edit-student.component';
 import { FormsModule } from '@angular/forms';
 import { HomeComponent } from './home/home.component';
+import { AddAccountComponent } from './add-account/add-account.component';
+import { BankingDetailsComponent } from './banking-details/banking-details.component';
+import { EditAccountComponent } from './edit-account/edit-account.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +23,10 @@ import { HomeComponent } from './home/home.component';
     StudentsComponent,
     AddStudentComponent,
     EditStudentComponent,
-    HomeComponent
+    HomeComponent,
+    AddAccountComponent,
+    BankingDetailsComponent,
+    EditAccountComponent
   ],
   imports: [
     BrowserModule,

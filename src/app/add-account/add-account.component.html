@@ -1,0 +1,42 @@
+<div class="student-add">
+  <h2>New Account</h2>
+  <form action="" [formGroup]="createAccount">
+    <div class="bankdetails">
+      <div class="account-info">
+        <label for="">Enter Student Id</label>
+        <input type="number" formControlName="studentID" value="" name="studentID">
+
+        <label for="">Enter Account Number</label>
+        <input type="number" formControlName="accountNumber" name="accountNumber">
+
+      </div>
+      <div class="bamk-info">
+        <label for="">Enter Name of Bank</label>
+        <input type="email" formControlName="bank" name="bank">
+
+        <label for="">Enter Your Bank Branch</label>
+        <input type="text" formControlName="branch" name="branch">
+
+      </div>
+    </div>
+
+
+    <label for="">Enter Account Status</label>
+    <select name="status" formControlName="status" id="">
+      <option disabled [selected]="true">--Select Status--</option>
+      <option value="Active">Active</option>
+      <option value="Inactive">Inactive</option>
+    </select>
+
+    <label for="">Enter Account Type</label>
+    <select name="accountType" formControlName="accountType" id="">
+      <option disabled [selected]="true">--Select Account Type--</option>
+      <option value="Savings">Savings</option>
+      <option value="Salary">Salary</option>
+      <option value="Fixed Deposit">Fixed Deposit</option>
+      <option value="Recurring">Recurring</option>
+    </select>
+  </form>
+
+  <button (click)="newAccount()">Add Acount</button>
+</div>

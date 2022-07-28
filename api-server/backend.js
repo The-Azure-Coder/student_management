@@ -4,6 +4,7 @@ const cors = require("cors");
 const bodyParser = require("body-parser");
 const path = require("path");
 const studentRoute = require("./routes/student-route");
+const bankRoute = require("./routes/banking-route");
 
 mongoose
   .connect("mongodb://localhost:27017/students")
@@ -23,6 +24,7 @@ app.use(cors());
 
 // Setting Route middleware
 app.use("/students", studentRoute);
+app.use("/bankingDetails", bankRoute);
 
 // Setting up Port
 const port = process.env.PORT || 4000;

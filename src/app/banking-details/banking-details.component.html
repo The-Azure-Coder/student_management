@@ -1,0 +1,38 @@
+<div class="table-head">
+  <h2>Banking Details</h2>
+</div>
+
+<div class="top-btn">
+  <button class="home-btn" routerLink="/">Home</button>
+  <button class="add-btn" routerLink="/createAccount">New Account</button>
+</div>
+<div class="board">
+  <table width="100%">
+    <thead>
+      <tr>
+        <th>StudentID</th>
+        <th>Account Number</th>
+        <th>Bank</th>
+        <th>Branch</th>
+        <th>Account Type</th>
+        <th>Status</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let account of bankDetails">
+        <td>{{account.studentID}}</td>
+        <td>{{account.accountNumber}}</td>
+        <td>{{account.bank}}</td>
+        <td>{{account.branch}}</td>
+        <td>{{account.accountType}}</td>
+        <td>{{account.status}}</td>
+        <td>
+          <a class="edit-btn" routerLink="/bankDetails/find/{{account._id}}">Edit</a>
+          <button class="delete-btn" (click)="deleteBankingDetailFromService(account._id)">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

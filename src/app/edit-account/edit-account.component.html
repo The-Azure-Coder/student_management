@@ -1,0 +1,40 @@
+<div *ngIf="bankingDetails" class="student-add">
+  <h2>Update Account</h2>
+  <div class="bankdetails">
+    <div class="account-info">
+      <label for="">Enter Student Id</label>
+      <input type="number" [(ngModel)]="bankingDetails.studentID">
+
+      <label for="">Enter Account Number</label>
+      <input type="number" [(ngModel)]="bankingDetails.accountNumber">
+
+    </div>
+    <div class="bamk-info">
+      <label for="">Enter Name of Bank</label>
+      <input type="text" [(ngModel)]="bankingDetails.bank">
+
+      <label for="">Enter Your Bank Branch</label>
+      <input type="text" [(ngModel)]="bankingDetails.branch">
+
+    </div>
+  </div>
+
+
+  <label for="">Enter Account Status</label>
+  <select [(ngModel)]="bankingDetails.status" name="status" id="">
+    <option [selected]="true">{{bankingDetails.status}}</option>
+    <option value="Active">Active</option>
+    <option value="Inactive">Inactive</option>
+  </select>
+
+  <label for="">Enter Account Type</label>
+  <select [(ngModel)]="bankingDetails.accountType" id="">
+    <option [selected]="true">{{bankingDetails.accountType}}</option>
+    <option value="Savings">Savings</option>
+    <option value="Salary">Salary</option>
+    <option value="Fixed Deposit">Fixed Deposit</option>
+    <option value="Recurring">Recurring</option>
+  </select>
+
+  <button (click)="updateAccount()">Update Acount</button>
+</div>
