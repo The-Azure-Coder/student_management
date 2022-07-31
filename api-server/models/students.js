@@ -14,6 +14,12 @@ let Student = new Schema(
       type: String,
     },
     phoneNumber: {
+      type: String,
+    },
+    grade: {
+      type: Number,
+    },
+    registrationFee: {
       type: Number,
     },
   },

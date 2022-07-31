@@ -20,14 +20,14 @@
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let student of students">
+      <tr *ngFor="let student of students ">
         <td>{{student._id}}</td>
         <td>{{student.name}}</td>
         <td>{{student.email}}</td>
         <td>{{student.cohort}}</td>
         <td>{{student.phoneNumber}}</td>
         <td>
-          <a class="edit-btn" routerLink="/students/find/{{student._id}}">Edit</a>
+          <a class="edit-btn" routerLink="/api/students/{{student._id}}">Edit</a>
           <button (click)="deleteStudent(student._id)" class="delete-btn">Delete</button>
         </td>
       </tr>

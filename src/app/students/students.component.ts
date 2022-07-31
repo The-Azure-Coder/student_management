@@ -14,8 +14,8 @@ export class StudentsComponent implements OnInit {
   constructor(private studentsService: StudentsService) { }
 
   getStudentsFromService():void{
-    this.studentsService.getStudents().subscribe(getStudents=>{
-      this.students = getStudents
+    this.studentsService.getStudents().subscribe(response=>{
+      this.students = response.data.getStudents
       console.log(`this Students is ${JSON.stringify(this.students)}`)
     })
   }
